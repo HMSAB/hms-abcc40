@@ -12,11 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from os import path
 from setuptools import setup, find_packages
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md')) as f:
+    long_description = f.read()
 
 setup(name="hms-abcc40",
       version="0.0.1",
       description="Anybus CompactCom40 access via REST",
+      long_description=long_description,
+      long_description_content_type="text/markdown",
       author="HMS Industrial Networks AB",
       author_email="pythoncontact@hms.se",
       url="https://github.com/hms-networks/hms-abcc40",
