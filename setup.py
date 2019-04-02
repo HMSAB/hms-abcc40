@@ -15,7 +15,7 @@
 from setuptools import setup, find_packages
 
 setup(name="hms-abcc40",
-      version="0.1",
+      version="0.0.1",
       description="Anybus CompactCom40 access via REST",
       author="HMS Industrial Networks AB",
       author_email="pythoncontact@hms.se",
